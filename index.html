@@ -3,42 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page for Portfolio website.">
-    <title>Raduel Ico - Portfolio</title>
+    <meta name="description" content="Raduel Ico - Frontend Developer Portfolio. Showcasing modern web development projects with semantic HTML, CSS, and accessibility best practices.">
+    <title>Raduel Ico - Frontend Developer Portfolio</title>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    
+    <header class="header">
+        <div class="container">
+            <a href="#" class="site-title">Raduel Ico</a>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Welcome</h2>
-            <p>This is a sample portfolio homepage. You can add more information about yourself here.</p>
-            <figure>
-                <img src="assets/lbj.avif" alt="A picture of the portfolio logo" width="250" height="250">
-                <figcaption>Profile Photo</figcaption>
-            </figure>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <article>
-                <h3>Project One: Responsive Webpage</h3>
-                <p>A modern, responsive website built with HTML and CSS, featuring semantic markup and accessibility best practices.</p>
-            </article>
-            <article>
-                <h3>Project Two: JavaScript Calculator</h3>
-                <p>A simple calculator app created using vanilla JavaScript, supporting basic arithmetic operations and a clean UI.</p>
-            </article>
-        </section>
+
+    <main id="main" class="main">
+        <div class="container">
+            <!-- About Section -->
+            <section id="about" class="section">
+                <h1>Frontend Developer & Problem Solver</h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hi, I'm Raduel Ico, a passionate frontend developer specializing in creating accessible, semantic web experiences. I focus on building clean, maintainable code that follows web standards and best practices. My expertise includes modern HTML, CSS, and creating responsive designs that work beautifully across all devices.</p>
+                        <p>I believe in the power of semantic HTML and accessible design to create inclusive web experiences for everyone.</p>
+                    </div>
+                    <img src="assets/myprofile.png" alt="Raduel Ico, frontend developer" class="about-image" width="300" height="300">
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3 class="project-title">Responsive E-commerce Site</h3>
+                        <p class="project-description">A fully responsive e-commerce website built with semantic HTML and modern CSS Grid. Features accessible navigation, optimized images, and mobile-first design principles.</p>
+                        <a href="#" class="project-link" aria-label="View Responsive E-commerce Site project details">View Project</a>
+                    </article>
+                    
+                    <article class="project-card">
+                        <h3 class="project-title">Accessible Dashboard Interface</h3>
+                        <p class="project-description">A clean, accessible dashboard interface with WCAG AA compliance. Includes keyboard navigation, screen reader support, and color contrast optimization for users with visual impairments.</p>
+                        <a href="#" class="project-link" aria-label="View Accessible Dashboard Interface project details">View Project</a>
+                    </article>
+                    
+                    <article class="project-card">
+                        <h3 class="project-title">Portfolio Website Template</h3>
+                        <p class="project-description">A semantic HTML portfolio template featuring CSS custom properties, mobile-first responsive design, and W3C validation compliance. Perfect starting point for developers showcasing their work.</p>
+                        <a href="#" class="project-link" aria-label="View Portfolio Website Template project details">View Project</a>
+                    </article>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer>
-        <small>© 2025 John Doe</small>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Let's build something amazing together. <a href="mailto:raduel.ico@example.com" class="footer-link">Contact me via email</a></p>
+                <p><small>&copy; 2025 Raduel Ico. All rights reserved.</small></p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
