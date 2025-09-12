@@ -262,6 +262,93 @@ button:focus {
   transform: translateX(2px);
 }
 
+/* ===== CONTACT PAGE STYLES ===== */
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-intro {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.contact-intro p {
+  font-size: var(--font-size-large);
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.contact-methods {
+  display: grid;
+  gap: var(--spacing-xl);
+  align-items: start;
+}
+
+.contact-card {
+  background-color: var(--surface-color);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+.contact-card h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-item {
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item strong {
+  color: var(--text-color);
+  min-width: 80px;
+  font-weight: 600;
+}
+
+.contact-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.contact-text {
+  color: var(--text-light);
+}
+
+.contact-image {
+  text-align: center;
+}
+
+/* Navigation current page indicator */
+.nav-link[aria-current="page"] {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
 /* ===== FOOTER ===== */
 .footer {
   background-color: var(--surface-color);
@@ -297,6 +384,11 @@ button:focus {
 @media (min-width: 768px) {
   .about-content {
     grid-template-columns: 2fr 1fr;
+  }
+  
+  .contact-methods {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
   }
   
   .projects-grid {

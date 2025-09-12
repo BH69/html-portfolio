@@ -1,41 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Contact page for Portfolio website.">
-	<title>Contact - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Raduel Ico - Frontend Developer. Get in touch for web development projects and collaborations.">
+    <title>Contact - Raduel Ico | Frontend Developer</title>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<header>
-        <h1>Contact Me</h1>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<img src="assets/lbj.avif" alt="Portfolio logo placeholder" width="250" height="250">
-		<section>
-			<h2>Get in Touch</h2>
-            <ul>
-                <li>
-                    <p>Email: icoraduel@gmail.com</p>
-                </li>
-                <li>
-                    <p>Phone: 09164521083</p>
-                </li>
-                <li>
-                    <p>GitHub: https://github.com/BH69</p>
-                </li>
-            </ul>
-			<p>Address: 123 Calasiao, Pangasinan</p>
-		</section>
-	</main>
-	<footer>
-		<small>© 2025 John Doe</small>
-	</footer>
+    
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="site-title">Raduel Ico</a>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="main">
+        <div class="container">
+            <section class="section">
+                <h1>Get in Touch</h1>
+                <div class="contact-content">
+                    <div class="contact-intro">
+                        <p>Ready to start your next project? I'd love to hear from you! Whether you need a responsive website, want to improve accessibility, or have questions about modern web development practices, let's connect.</p>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-card">
+                            <h2>Contact Information</h2>
+                            <ul class="contact-list">
+                                <li class="contact-item">
+                                    <strong>Email:</strong> 
+                                    <a href="mailto:icoraduel@gmail.com" class="contact-link">raduel@example.com</a>
+                                </li>
+                                <li class="contact-item">
+                                    <strong>Phone:</strong> 
+                                    <a href="tel:+639164521083" class="contact-link">09123456789</a>
+                                </li>
+                                <li class="contact-item">
+                                    <strong>GitHub:</strong> 
+                                    <a href="https://github.com/BH69" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/BH69</a>
+                                </li>
+                                <li class="contact-item">
+                                    <strong>Location:</strong> 
+                                    <span class="contact-text">Pangasinan, Philippines</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="contact-image">
+                            <img src="assets/myprofile.png" alt="Raduel Ico, frontend developer available for contact" class="about-image" width="300" height="300">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p><a href="index.html" class="footer-link">Back to Portfolio</a> | Let's create something amazing together!</p>
+                <p><small>&copy; 2025 Raduel Ico. All rights reserved.</small></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
